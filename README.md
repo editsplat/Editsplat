@@ -1,3 +1,3 @@
 # robust-demo
 
-[demo page](https://kuai-lab.github.io/robust-demo/)
+[demo page](https://editsplat.github.io/Editsplat/)

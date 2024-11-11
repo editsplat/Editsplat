@@ -15,72 +15,27 @@
 </head>
 <body>
 <div class="title">
-    <h1>Robust Sound-Guided Image Manipulation</h1>
+    <h1>EditSplat: Multi-View Fusion and Attention-Guided Optimization for View-Consistent 3D Scene Editing with 3D Gaussian Splatting</h1>
     <center>
-        <h3>Neural Networks 2024</h3>
-    </center>
-    <center>
-        <h4>Seunghyun Lee<sup>†a</sup>, Hyun-gun Chi<sup>†e</sup>, Gyeongrok Oh<sup>a</sup>, Wonmin Byeon<sup>c</sup>, Sang Ho Yoon<sup>d</sup>, Hyunje Park<sup>a</sup> Jinkyu Kim<sup>*b</sup>, Sangpil Kim<sup>*a</sup></h4>
-    </center>
-    <center>
-        <h5>
-            <sup>a</sup>Department of Artificial Intelligence, Korea University, South Korea <br />
-            <sup>b</sup>Department of Computer Science and Engineering, Korea University, South Korea <br />
-            <sup>c</sup>NVIDIA Research, NVIDIA Corporation, USA <br />
-            <sup>d</sup>Graduate School of Culture Technology, KAIST, South Korea <br />
-            <sup>e</sup>School of Electrical and Computer Engineering, Purdue University, USA
-        </h5>
+        <h4>Anonymous Authors</h4>
     </center>
     
 </div>
-<!-- <div class="byline">
-    <div class="authors">
-        <center>
-            <div class="author"><sup> <h2>Seung Hyun&nbsp;Lee</a><sup>1</sup> &emsp; Wonseok&nbsp;Roh</a><sup>1</sup> &emsp; Wonmin&nbsp;Byeon</a><sup>2</sup> &emsp; Sang Ho&nbsp;Yoon</a><sup>3</sup>&emsp; Chanyoung&nbsp;Kim</a><sup>1</sup> &emsp; Jinkyu&nbsp;Kim</a><sup>1*</sup>&emsp; Sangpil&nbsp;Kim</a><sup>1*</sup></h2></sup></div>
-
-        </center>
-    </div>
-    <div class="affiliations">
-        <center>
-            <p class="affiliation"><sup> </sup><h3>Korea University<sup>1</sup> &emsp; NVIDIA Research<sup>2</sup>&emsp; KAIST<sup>3</sup></h3></p>
-        </center>
-    </div>
-    <div class="links">
-        <center>
-            <a href="https://openaccess.thecvf.com/content/CVPR2022/html/Lee_Sound-Guided_Semantic_Image_Manipulation_CVPR_2022_paper.html" class="link">
-                [Paper]
-            </a>
-            <a href="https://github.com/kuai-lab/sound-guided-semantic-image-manipulation" class="link">
-                [Code]
-            </a>
-        </center>
-    </div>
-</div> -->
-
 
 <div class="container">
-    <!-- <div class="center-img">
-        <img class="content" src="https://kr.object.ncloudstorage.com/cvpr2022/overview.png">
-    </div> -->
     <div class="sections-container">
         <div class="section">
             <h2 class="section-title">Abstract</h2>
             <p>
-                Recent successes suggest that an image can be manipulated by a text prompt, e.g., a landscape scene on a sunny day is manipulated into the same scene on a rainy day driven by a text input ``raining''. These approaches often utilize a StyleCLIP-based image generator, which leverages multi-modal (text and image) embedding space. However, we observe that such text inputs are often bottlenecked in providing and synthesizing rich semantic cues, e.g., differentiating heavy rain from rain with thunderstorms. To address this issue, we advocate leveraging an additional modality, sound, which has notable advantages in image manipulation as it can convey more diverse semantic cues (vivid emotions or dynamic expressions of the natural world) than texts. In this paper, we propose a novel approach that first extends the image-text joint embedding space with sound and applies a direct latent optimization method to manipulate a given image based on audio input, e.g., the sound of rain. Our extensive experiments show that our sound-guided image manipulation approach produces semantically and visually more plausible manipulation results than the state-of-the-art text and sound-guided image manipulation methods, which are further confirmed by our human evaluations. Our downstream task evaluations also show that our learned image-text-sound joint embedding space effectively encodes sound inputs.
+                Wow
             </p>
         </div>
         <div class="section">
             <h2 class="section-title">Method</h2>
-            <!-- <div class="center-img">
-                <img class="content" src="https://kr.object.ncloudstorage.com/cvpr2022/main_figure.png"/>
-            </div> -->
             <p style="margin-top: 30px">
-                We propose a novel audio-visual weakly paired contrastive learning, which prevents sound representation from learning biases between audio-visual from other videos in minibatches. Our approach increases the number of positive weak edges between sound and image which are sampled from other videos. By leveraging weakly connected audio-visual pairs which shares the same text description, we take advantage of the fact that videos having the same labels share common visual feature information. We propose to minimize Kullback–Leibler divergence between visual-text cosine similarity probability distribution and audio-visual cosine similarity probability distribution. Our weakly paired contrastive learning proceeds as follows. First, we sample additional visual data with text queries during the sound representation pre-training step. After that, our audio-visual similarity score aims to imitate the visual-text similarity score. Instead of estimating the identity matrix directly, the proposed method equalizes the audio-visual softmax-probability distribution and the visual-text softmax-probability distribution in minibatches. We find that our approach generates more robust images to fine-grained visual details, such as drastic color and hairstyle changes, than the previous method.
+                We propose sick 3D editing.
             </p>
         </div>
-<!--        <div class="section">-->
-<!--            <h2 class="section-title">Links</h2>-->
-<!--        </div>-->
         <div class="section">
             <h2 class="section-title">Manipulation Results - Successful Cases</h2>
             
